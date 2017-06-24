@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <TextView
+        android:id="@+id/TVtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="107dp"
+        android:layout_toStartOf="@+id/RDview"
+        android:text="TextView"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="#ef006378"
+        android:layout_alignRight="@+id/TVoverview"
+        android:layout_alignEnd="@+id/TVoverview"
+        android:layout_toLeftOf="@+id/RDview" />
+
+    <RatingBar
+        android:id="@+id/RBvoteaverage"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TVtitle"
+        android:layout_alignStart="@+id/TVtitle"
+        android:layout_below="@+id/RDview"
+        android:numStars="5"
+        android:progressBackgroundTint="#b7b6b6"
+        android:progressTint="#bfbebe"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/TVoverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/RBvoteaverage"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="10dp"
+        android:text="TextView"
+        android:textColor="#f500a2ae" />
+
+    <TextView
+        android:id="@+id/RDview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TVtitle"
+        android:layout_marginRight="8dp"
+        android:layout_toEndOf="@+id/RDtext"
+        android:layout_toRightOf="@+id/RDtext"
+        android:text="date"
+        android:textColor="#ef006378" />
+
+    <TextView
+        android:id="@+id/RDtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TVtitle"
+        android:layout_marginLeft="10dp"
+        android:text="Release Date: "
+        android:textColor="#f500a2ae" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#50007b81"
+        android:id="@+id/frameLayout">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pic2" />
+    </FrameLayout>
+
+</RelativeLayout>
