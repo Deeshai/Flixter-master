@@ -13,6 +13,8 @@
         android:layout_marginTop="107dp"
         android:layout_toStartOf="@+id/RDview"
         android:text="TextView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="10dp"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textColor="#ef006378"
         android:layout_alignRight="@+id/TVoverview"
